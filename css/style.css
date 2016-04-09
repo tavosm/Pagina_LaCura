@@ -4,14 +4,14 @@
                       Main Styles
 =========================================================*/
 body {
-  background: #a95858;
+  background-image: url("../recortadas/fondo.jpg");
   color: #333;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-family: 'Imprint MT Shadow', sans-serif;
+  font-size: 25px;
   line-height: 20px;
   font-weight: 400px;
   -webkit-text-size-adjust: none;
-  color: #5f5e4e;
+  color: #CC0000;
 }
 img {
   max-width: 100%;
@@ -19,11 +19,20 @@ img {
 }
 h2 {
   text-align: center;
-  font-family: 'Arial';
+  font-family: 'FreebooterShadow';
   font-size: 62px;
   line-height: 82px;
   font-weight: 300;
-  color: #823f3f;
+  color: #CC0000;
+}
+
+h6{
+  text-align: center;
+  font-family: 'FreebooterShadow';
+  font-size: 62px;
+  line-height: 82px;
+  font-weight: 300;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   h2 {
@@ -33,29 +42,31 @@ h2 {
 }
 h2 em {
   display: block;
-  font-family: 'Arial', cursive;
+  font-family: 'FreebooterShadow', cursive;
   font-size: 100px;
   line-height: 82px;
   font-weight: 400;
+  color: #CC0000;
 }
 @media (max-width: 767px) {
   h2 em {
     font-size: 72px;
     line-height: 56px;
+    color: #CC0000;
   }
 }
 h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-family: 'FreebooterUpdated', sans-serif;
+  font-size: 35px;
   line-height: 20px;
   font-weight: 400;
-  color: #393328;
+  color: #CC0000;
 }
 p a:hover {
   text-decoration: underline;
 }
 figcaption {
-  font-family: 'Arial', cursive;
+  font-family: 'Imprint MT Shadow', cursive;
   font-size: 30px;
   line-height: 40px;
   font-weight: 400;
@@ -138,7 +149,7 @@ a[href^="tel:"] {
 }
 [class*='fa-']:before {
   font-weight: 400;
-  font-family: 'FontAwesome';
+  font-family: 'Imprint MT Shadow';
 }
 .page {
   overflow: hidden;
@@ -200,20 +211,26 @@ a[href^="tel:"] {
   display: block;
 }
 .sf-menu {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'FreebooterUpdated';
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
 }
 .sf-menu > li > a {
   color: #ffffff;
+
 }
 .sf-menu > li.sfHover > a,
 .sf-menu > li > a:hover {
-  color: #2b2929;
+ color: #CC0000;
+ font-size: 60px;
+
+
+
 }
 .sf-menu > li.active > a {
-  color: #2b2929;
+  
+
 }
 .sf-menu ul {
   display: none;
@@ -222,26 +239,27 @@ a[href^="tel:"] {
   width: 235px;
   margin-top: 30px;
   padding: 0;
-  background: #e6e6e6;
+  
   z-index: 2;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .sf-menu ul {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'FreebooterShadow';
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
+  
 }
 .sf-menu ul > li > a {
-  color: #393328;
+  
   padding: 0 20px;
 }
 .sf-menu ul > li.sfHover > a,
 .sf-menu ul > li > a:hover {
   color: #ffffff;
-  background: #884646;
+  
 }
 .sf-menu ul ul {
   position: static;
@@ -252,13 +270,13 @@ a[href^="tel:"] {
   z-index: 4;
 }
 .sf-menu ul ul > li > a {
-  color: #393328;
+  color: #ffffff;
   padding: 0 30px;
 }
 .sf-menu ul ul > li.sfHover > a,
 .sf-menu ul ul > li > a:hover {
   color: #ffffff;
-  background: #884646;
+  
 }
 .sf-menu > li > .sf-with-ul {
   position: relative;
@@ -269,13 +287,14 @@ a[href^="tel:"] {
   top: 100%;
   margin-left: -6px;
   content: '\f0d7';
-  font: 400 12px/12px 'FontAwesome';
+  font: 400 12px/12px 'FreebooterShadow';
 }
 @media (max-width: 767px) {
   .sf-menu {
     display: none;
   }
 }
+
 .toggle-menu-container .nav {
   margin: 0;
   position: fixed;
@@ -283,73 +302,95 @@ a[href^="tel:"] {
   top: 0;
   height: 100%;
   width: 273px;
-  background: #ffffff;
+  background-image: url("../recortadas/rojo.jpg");
   border-left: 1px solid #e6e6e6;
   z-index: 998;
 }
 .toggle-menu-container .nav_title {
   padding: 20px 0;
-  background: #423e3e;
+  
+}
+.h10{
+
+  font-size: 100px;
 }
 .toggle-menu-container .sf-menu-toggle {
   position: fixed;
   top: 47px;
-  right: 60px;
-  width: 75px;
-  height: 75px;
+  right: 55px;
+  width: 80px;
+  height: 70px;
   font-size: 60px;
-  line-height: 75px;
+  line-height: 65px;
   color: #fff;
-  background: #adabad;
+  background-image: url("../recortadas/favicon2.png");
+
   text-align: center;
 }
+
+.txt_menu {
+  position: fixed;
+  font-family: 'FreebooterUpdated';
+  top: 107px;
+  right: 45px;
+  font-size: 40px;
+  color: black;
+}
+
 .toggle-menu-container .sf-menu-toggle:hover {
   text-decoration: none;
-  background: #fff;
+  
   color: #000;
 }
 .toggle-menu-container .sf-menu {
   width: 100%;
 }
-.toggle-menu-container .sf-menu > li {
+.toggle-menu-container .sf-menu  > li {
   float: none;
 }
 .toggle-menu-container .sf-menu > li + li {
   margin-left: 0;
 }
 .toggle-menu-container .sf-menu > li a {
-  color: #823f3f;
-  background: none;
+  color: #ffffff;
+  font-size: 40px;
   padding: 10px 40px;
+
 }
 .toggle-menu-container .sf-menu > li.active > a {
-  color: #ffffff;
-  background: #a95858;
+  color: #CC0000;
+
+ 
 }
 .toggle-menu-container .sf-menu > li.sfHover > a,
 .toggle-menu-container .sf-menu > li a:hover {
-  color: #ffffff;
-  background: #ba7a7a;
+  color: #CC0000;
+   background-image: url("../recortadas/cuchillo2.png" );
+  width: 120px;
+  height: 45px;
+  text-align: left;
+  font-size: 60px;
+
 }
-.toggle-menu-container .sf-menu ul {
+.toggle-menu-container .sf-menu  ul {
   position: static;
   padding: 0;
   margin: 0;
   width: 100%;
 }
 .toggle-menu-container .sf-menu ul li a {
-  color: #823f3f;
-  background: none;
+  color: #ffffff;
+  
   padding: 10px 50px;
 }
 .toggle-menu-container .sf-menu ul li.active > a {
   color: #ffffff;
-  background: #a95858;
+  
 }
 .toggle-menu-container .sf-menu ul li.sfHover > a,
 .toggle-menu-container .sf-menu ul li a:hover {
   color: #ffffff;
-  background: #ba7a7a;
+  
 }
 .toggle-menu-container .sf-menu ul ul a {
   padding: 10px 60px;
@@ -360,9 +401,19 @@ a[href^="tel:"] {
 .toggle-menu-container .nav.active .sf-menu-toggle {
   margin-left: 0;
   top: 6px;
-  right: 233px;
-  height: 30px;
-  width: 30px;
+  right: 23px;
+  width: 80px;
+  height: 70px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.nav.active .txt_menu{
+  margin-left: 0;
+  top: 6px;
+  right: -273px;
+  width: 80px;
+  height: 70px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -386,15 +437,15 @@ a[href^="tel:"] {
   display: none;
   margin: 0 auto;
   width: 420px;
-  background: #ffffff url('../images/select.png') no-repeat right center;
+  
   overflow: hidden;
 }
 .select-menu .select {
   width: 440px;
   height: 30px;
-  color: #585858;
-  background-color: transparent;
-  font: 400 15px 'Open Sans', sans-serif;
+  color: #ffffff;
+  background-image: url("../recortadas/fondo.jpg");
+  font: 400 15px 'FreebooterShadow', sans-serif;
   line-height: 30px;
   border: none;
   border-radius: 0;
@@ -420,7 +471,7 @@ a[href^="tel:"] {
 }
 /*==================  Stuck menu  ======================*/
 .isStuck {
-  background: #994f4f;
+  background-image: url("../recortadas/fondo.jpg");
   z-index: 999;
   border-bottom: 1px solid #333333;
 }
@@ -461,7 +512,7 @@ a[href^="tel:"] {
 @media only screen and (max-width: 1399px) {
   .toTop {
     display: none !important;
-  }
+   }
 }
 /*==================   Parallax    ======================*/
 .parallax {
@@ -477,24 +528,25 @@ a[href^="tel:"] {
 .parallax1 {
   text-align: center;
   background-color: #FFF;
-  background-image: url(../images/parallax01.jpg);
+  background-image: url(../nuevas/barco.jpg);
   padding: 132px 0 127px;
 }
 .parallax2 {
   color: #ffffff;
   background-color: #FFF;
-  background-image: url(../images/parallax02.jpg);
+  background-image: url(../nuevas/barco.jpg);
+  text-align: center;
   padding: 142px 0 142px;
 }
 .parallax3 {
   background-color: #FFF;
-  background-image: url(../images/parallax03.jpg);
+  background-image: url(../nuevas/barco.jpg);
   padding: 117px 0 122px;
 }
 .parallax4 {
   color: #ffffff;
   background-color: #FFF;
-  background-image: url(../images/parallax04.jpg);
+  background-image: url(../nuevas/barco.jpg);
   padding: 97px 0 100px;
 }
 .parallax4 h2 {
@@ -503,7 +555,7 @@ a[href^="tel:"] {
 .parallax5 {
   color: #ffffff;
   background-color: #FFF;
-  background-image: url(../images/parallax05.jpg);
+  background-image: url(../nuevas/barco.jpg);
   padding: 134px 0px 132px;
 }
 .parallax5 h2 {
@@ -517,7 +569,7 @@ a[href^="tel:"] {
   position: absolute;
   left: 0;
   top: 10px;
-  font-family: 'FontAwesome';
+  font-family: 'Imprint MT Shadow';
   font-size: 60px;
   line-height: 60px;
 }
@@ -534,10 +586,14 @@ a[href^="tel:"] {
                      HEADER  Section
 =========================================================*/
 header {
-  background: #a95858;
+  /*background: #404040;*/
+  background-image: url("../recortadas/fondo.jpg");
 }
 header .brand {
+  font-family: 'FreebooterShadow';
   float: left;
+  font-size: 100px;
+
 }
 header .nav {
   margin: 38px 0 48px 0;
@@ -556,15 +612,34 @@ header .nav {
 .brand {
   margin: 14px 0 0 0;
   float: left;
+  font-size: 60px;
+  color: #CC0000;
+}
+@font-face {
+  font-family: "FreebooterShadow";    src: url(../css/FreebooterShadow.ttf); 
+
+}
+
+  @font-face {
+  font-family: "FreebooterUpdated";    src: url(../css/FreebooterUpdated.ttf);
+
+}
+  
+
+.titulo_cura {
+  font-family: "FreebooterShadow";
+  color: #ffffff;
+}
+
 }
 .brand_name {
   padding: 0 0 6px 4px;
   display: inline-block;
   overflow: hidden;
-  font-family: 'Times new roman', cursive;
-  font-size: 60px;
+  font-family: 'FreebooterShadow';
+  font-size: 80px;
   line-height: 64px;
-  color: #ffffff;
+  color: #6c6860;
 }
 /*=======================================================
                      CONTENT  Layout
@@ -641,7 +716,7 @@ main {
 .btn {
   position: relative;
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Imprint MT Shadow', sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
@@ -716,7 +791,7 @@ main {
   position: relative;
   height: 0;
   overflow: hidden;
-  background: #ffffff url(../images/lazy-loader.gif) no-repeat center center;
+  background: #ffffff url(../images/pirate.gif) no-repeat center center;
 }
 .lazy-img img {
   position: absolute;
@@ -874,6 +949,8 @@ footer .socials {
 }
 footer .socials li {
   float: left;
+
+
 }
 footer .socials li + li {
   margin-left: 100px;
@@ -883,6 +960,7 @@ footer .socials li + li {
     margin-left: 30px;
   }
 }
+
 @media (max-width: 479px) {
   footer .socials li + li {
     margin-left: 15px;
@@ -944,7 +1022,7 @@ footer .tm {
   margin-top: 20px;
 }
 .bg-1 {
-  background: #a95858;
+  background-image: url("../recortadas/fondo.jpg");
   color: #ffffff;
 }
 .bg-1 h2 {
