@@ -631,6 +631,14 @@ header .nav {
   color: #ffffff;
 }
 
+.titulo_cura_2{
+color: #fff;
+font-family: "FreebooterShadow";
+font-size: 100px;
+letter-spacing: 0;
+text-shadow: -3px -3px 3px #CC0000, 3px -3px 3px #CC0000, -3px 3px 3px #CC0000, 3px 3px 3px #CC0000;
+}
+
 }
 .brand_name {
   padding: 0 0 6px 4px;
