@@ -365,7 +365,7 @@ a[href^="tel:"] {
 .toggle-menu-container .sf-menu > li.sfHover > a,
 .toggle-menu-container .sf-menu > li a:hover {
   color: #CC0000;
-   background-image: url("../recortadas/cuchillo2.png" );
+  background-image: url("../recortadas/cuchillo2.png" );
   width: 120px;
   height: 45px;
   text-align: left;
@@ -503,11 +503,17 @@ a[href^="tel:"] {
   text-decoration: none;
   z-index: 20;
   border-radius: 50%;
+  background-image: url("../recortadas/favicon2.png" );
+  background-repeat: no-repeat;
+  background-position: 15px;
 }
 .toTop:hover {
   color: #fff;
-  background: #663535;
+  background: #0F0909;
   text-decoration: none;
+  background-image: url("../recortadas/favicon2.png" );
+  background-repeat: no-repeat;
+  background-position: 15px;
 }
 @media only screen and (max-width: 1399px) {
   .toTop {
