@@ -633,7 +633,7 @@ header .nav {
 
 .titulo_cura_2{
 color: #fff;
-font-family: "FreebooterShadow";
+font-family: "FreebooterUpdated";
 font-size: 100px;
 letter-spacing: 0;
 text-shadow: -3px -3px 3px #CC0000, 3px -3px 3px #CC0000, -3px 3px 3px #CC0000, 3px 3px 3px #CC0000;
@@ -649,6 +649,43 @@ text-shadow: -3px -3px 3px #CC0000, 3px -3px 3px #CC0000, -3px 3px 3px #CC0000, 
   line-height: 64px;
   color: #6c6860;
 }
+
+/*============ MENU DE DESPLAZAMIENTO RAPIDO ============*/
+
+.container_menu_rapido{
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container_menu_rapido nav{
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.container_menu_rapido nav ul{
+  list-style: none;
+  overflow: hidden;
+}
+
+.container_menu_rapido nav ul li{
+  float: left;/*ponemos cada uno de los elementos uno despues del otro, overflow:hidden ayuda a float para que no haya problemas en como se ve*/
+}
+
+.container_menu_rapido nav ul li a{
+  display: block;
+  padding: 11px;/*Separacion entre el texto y las orillas*/
+  color: #CC0000;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.container_menu_rapido nav ul li a:hover{
+  background-color: #190707;
+  transform: scale(1,1.3);
+  color: #fff;
+}
+
 /*=======================================================
                      CONTENT  Layout
 =========================================================*/
