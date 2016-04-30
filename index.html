@@ -19,6 +19,34 @@
 
 <body>
 
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '240774552978991',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/es_MX/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!--BOTON DE LIKE-->
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+<!--CAJA DE COMENTARIOS-->
+<div class="fb-comments" data-href="https://la-cura-tavosm.c9users.io/index.html" data-numposts="5"></div>
 
 <div class="page">
     <!--========================================================
@@ -45,9 +73,8 @@
             <div class="brand wow fadeIn">
                 <h1 class="brand_name" >
               
-                  <a class="titulo_cura">La Cura<h6>El lado oscuro de la cocina</h6></a>
-
-                  
+                  <a class="titulo_cura">La Cura</a>
+                  <h6><a class="titulo_cura">El lado oscuro de la cocina</a></h6>
 
                 </h1>
             </div>
@@ -92,11 +119,11 @@
                 <h2><em>Bienvenido</em>a nuestro lugar</h2>
                 <div class="row">
                     <div class="grid_6">
-                        <div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="nuevas/1.jpg" alt=""></div></div>
+                        <div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="nuevas/1.jpg" alt="imagen"></div></div>
                         <p class="center indents-1">El Restaurante Mariscos La Cura es uno de los restaurantes con mayor aceptación en cuanto a comida marina se refiere. Contamos con un equipo del más alto nivel dirigido por un Chef de gran prestigio y un Barman con más de 10 años de experiencia en el rubro.</p>
                     </div>
                     <div class="grid_6">
-                        <div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="nuevas/3.jpg" alt=""></div></div>
+                        <div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="nuevas/3.jpg" alt="imagen"></div></div>
                         <p class="center indents-1">Nuestra intención es ponernos a su servicio en cuanto a comida se refiere por tal motivo pasamos a dar a conocer nuestras deliciosas especialidades.</p>
                     </div>
                 </div>
@@ -106,7 +133,7 @@
             <div class="gallery">
                 <div class="gallery_col-1">
                     <a data-fancybox-group="gallery" href="recortadas/bichi.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.96551724137931%;">
-                        <img data-src="recortadas/bichi.jpg" alt="">
+                        <img data-src="recortadas/bichi.jpg" alt="Bichi de camaron">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
                                 <p><em>Bichi</em></p>
@@ -115,7 +142,7 @@
                         </div>
                     </a>
                         <a data-fancybox-group="gallery" href="recortadas/camaronescoliman.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 74.13793103448276%;">
-                        <img data-src="recortadas/camaronescoliman.jpg" alt="">
+                        <img data-src="recortadas/camaronescoliman.jpg" alt="Camarones coliman">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
                                 <p><em>Camarones coliman</em></p>
@@ -124,7 +151,7 @@
                         </div>
                     </a>
                     <a data-fancybox-group="gallery" href="recortadas/capeadosdepescado.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 74.13793103448276%;">
-                        <img data-src="recortadas/capeadosdepescado.jpg" alt="">
+                        <img data-src="recortadas/capeadosdepescado.jpg" alt="Tacos Capeados">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
                                 <p><em>Tacos Capeados de Pescado</em></p>
@@ -136,7 +163,7 @@
                 </div>
                 <div class="gallery_col-2">
                     <a data-fancybox-group="gallery" href="recortadas/cevichedecamaron.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 52.48322147651007%;">
-                        <img data-src="recortadas/cevichedecamaron.jpg" alt="">
+                        <img data-src="recortadas/cevichedecamaron.jpg" alt="Ceviche">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
                                 <p><em>Ceviche de Camaron</em></p>
@@ -147,7 +174,7 @@
                         </div>
                     </a>
                     <a data-fancybox-group="gallery" href="recortadas/fileteajillo.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 55.97315436241611%;">
-                        <img data-src="recortadas/fileteajillo.jpg" alt="">
+                        <img data-src="recortadas/fileteajillo.jpg" alt="Filete">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
                                 <p><em>Filete de Pescado al Ajillo</em></p>
@@ -156,7 +183,7 @@
                         </div>
                     </a>
                     <a data-fancybox-group="gallery" href="recortadas/guera.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 96.10738255033557%;">
-                        <img data-src="recortadas/guera.jpg" alt="">
+                        <img data-src="recortadas/guera.jpg" alt="Tostada">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
                                 <p><em>Tostada Guera</em></p>
@@ -167,7 +194,7 @@
                 </div>
                 <div class="gallery_col-3">
                     <a data-fancybox-group="gallery" href="recortadas/ostiones.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
-                        <img data-src="recortadas/ostiones.jpg" alt="">
+                        <img data-src="recortadas/ostiones.jpg" alt="Ostiones">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
                                 <p><em>Ostiones</em></p>
@@ -176,7 +203,7 @@
                         </div>
                     </a>
                     <a data-fancybox-group="gallery" href="recortadas/patadeindio.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 72.23168654173765%;">
-                        <img data-src="recortadas/patadeindio.jpg" alt="">
+                        <img data-src="recortadas/patadeindio.jpg" alt="Pata de Indio">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
                                 <p><em>Tostada Pata de Indio</em></p>
@@ -185,7 +212,7 @@
                         </div>
                     </a>
                     <a data-fancybox-group="gallery" href="recortadas/sanalona.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
-                        <img data-src="recortadas/sanalona.jpg" alt="">
+                        <img data-src="recortadas/sanalona.jpg" alt="Sanalona">
                         <div class="gallery_overlay">
                             <div class="gallery_caption">
                                 <p><em>Tostada Sanalona</em></p>
@@ -209,7 +236,7 @@
                 <div class="row row__offset-1">
                     <div class="grid_4">
                         <figure>
-                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img12.jpg" alt=""></div>
+                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img12.jpg" alt="Cocinero"></div>
                             <figcaption>Kevin Grey</figcaption>
                         </figure>
                         <h3>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
@@ -217,7 +244,7 @@
                     </div>
                     <div class="grid_4">
                         <figure>
-                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img13.jpg" alt=""></div>
+                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img13.jpg" alt="Cocinero"></div>
                             <figcaption>Linda Klein</figcaption>
                         </figure>
                         <h3>Oeteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
@@ -225,7 +252,7 @@
                     </div>
                     <div class="grid_4">
                         <figure>
-                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img14.jpg" alt=""></div>
+                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img14.jpg" alt="Cocinero"></div>
                             <figcaption>Ann Shelton</figcaption>
                         </figure>
                         <h3>Koteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
@@ -235,6 +262,11 @@
                 <div class="decoration"><a href="#" class="btn">Read more</a></div>
             </div>
         </section>
+
+       
+
+
+
         <section class="well well__offset-2">
             <div class="container center">
                 <h2><em>Make </em>a Reservation</h2>
@@ -245,6 +277,8 @@
                     <p><em>800 2345-6789</em></p>
                 </address>
             </div>
+
+            <div class="fb-comments" data-href="https://www.facebook.com/profile.php?id=100004821459846" data-numposts="5"></div>
         </section>
     </main>
 
@@ -255,7 +289,7 @@
         <div class="container">
             <ul class="socials">
                 <li >
-                    <a  href="https://www.facebook.com/MariscosLacura/?fref=ts" class="fa fa-facebook" ><img src="recortadas/Facebook_Logo1.jpg"></a></li>
+                    <a  href="https://www.facebook.com/MariscosLacura/?fref=ts" class="fa fa-facebook" ><img src="recortadas/Facebook_Logo1.jpg" alt="Logo Facebook"></a></li>
           
             </ul>
             <div class="copyright">© <span id="copyright-year"></span> |
