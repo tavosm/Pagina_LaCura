@@ -502,7 +502,17 @@ table {
     width: 100%;
     margin-left: 0;
   }
+  .container .fb-comments{
+    margin-left: -60px;
+  }
 }
+
+@media (max-width: 580px){
+  .container .fb-comments{
+    display: none;
+  }
+}
+
 @media (max-width: 479px) {
   body {
     padding: 0;
