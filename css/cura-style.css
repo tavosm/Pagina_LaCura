@@ -1,0 +1,97 @@
+#usuario_cura{
+	width: 220px;
+}
+
+#l_usuario{
+	margin-top: 30px;
+}
+
+#contraseña_cura{
+	width: 220px;
+	margin-bottom: 30px;
+}
+
+#l_contraseña{
+
+}
+
+#form-cura{
+	width: 380px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+#btn-login{
+	width: 100px;
+	height: 50px;
+	margin-bottom: 30px;
+	background-color: #2E2E2E;
+	color: #fff;
+	font-family: 'Imprint MT Shadow';
+	font-size: 22px;
+	border-radius: 8px;
+}
+
+#btn-login:hover{
+	transform: scale(1.1,1.1);
+	border: 2px solid #000;
+	background-color: #896200;
+}
+
+#div-btn{
+	padding: 40px;
+}
+
+#btn-agregar, #btn-modificar, #btn-eliminar{
+	padding: 10px;
+	font-size: 20px;
+	font-family: 'Imprint MT Shadow';
+	color: #fff;
+	border: 2px solid black;
+	border-radius: 4px;
+	display: inline;
+}
+
+#btn-agregar{
+	margin-right: 50px;
+	background-color: green;
+}
+
+#btn-modificar{
+	margin: 0px 50px;
+	background-color: #8A4B08;
+}
+
+#btn-eliminar{
+	margin-left: 50px;
+	background-color: red;
+}
+
+#btn-agr{
+	width: 110px;
+	height: 50px;
+	margin-bottom: 30px;
+	background-color: #0101DF;
+	color: #fff;
+	font-family: 'Imprint MT Shadow';
+	font-size: 22px;
+	border-radius: 5px;
+	border: 2px solid #000;
+}
+
+/*Modificar posicion del div de los botones*/
+#menu-btn{
+	margin-top: -90px;
+}
+
+#div-fagregar{
+	margin-top: -70px;
+}
+
+#lista-btn{
+	text-align: center;
+}
+
+#p-mod{
+	width: 230px;
+}

@@ -179,6 +179,7 @@ a[href^="tel:"] {
 }
 .indents-3 {
   padding: 0 55px 0 0;
+  text-align: justify;
 }
 @media (max-width: 1199px) {
   .indents-3 {
@@ -334,7 +335,7 @@ a[href^="tel:"] {
   top: 107px;
   right: 45px;
   font-size: 40px;
-  color: black;
+  color: #B40404;
 }
 
 .toggle-menu-container .sf-menu-toggle:hover {
@@ -418,9 +419,13 @@ a[href^="tel:"] {
   line-height: 30px;
 }
 @media (max-width: 979px) {
-  .toggle-menu-container .sf-menu-toggle {
+  .toggle-menu-container .sf-menu-toggle{
     top: 10px;
     right: 10px;
+  }
+  .txt_menu{
+    right: 3px;
+    top: 65px;
   }
 }
 @media (max-width: 767px) {
@@ -488,12 +493,12 @@ a[href^="tel:"] {
 }
 /*==================     ToTop     ======================*/
 .toTop {
-  width: 115px;
-  height: 115px;
+  width: 100px;
+  height: 100px;
   font-size: 88px;
   line-height: 115px;
   color: #fff;
-  background: #b6b2b3;
+  background: #D8D8D8;
   position: fixed;
   right: 66px;
   bottom: 180px;
@@ -503,17 +508,17 @@ a[href^="tel:"] {
   text-decoration: none;
   z-index: 20;
   border-radius: 50%;
-  background-image: url("../recortadas/favicon2.png" );
+  background-image: url("../recortadas/flecha-arriba.png" );
   background-repeat: no-repeat;
-  background-position: 15px;
+  background-position: 20px;
 }
 .toTop:hover {
   color: #fff;
-  background: #0F0909;
+  background: #848484;
   text-decoration: none;
-  background-image: url("../recortadas/favicon2.png" );
+  background-image: url("../recortadas/flecha-arriba.png" );
   background-repeat: no-repeat;
-  background-position: 15px;
+  background-position: 20px;
 }
 @media only screen and (max-width: 1399px) {
   .toTop {
@@ -986,6 +991,10 @@ main {
 }
 .gallery * + p {
   margin-top: 20px;
+}
+
+#img-cura{
+  height: 96px;
 }
 /*========================================================
                      FOOTER  Styles

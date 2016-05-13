@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" type="text/css" href="css/cura-style.css">
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -59,7 +60,7 @@
                         <a href="index-3.html">Menu</a>
                     </li>
                     <li>
-                        <a href="index-4.html">Contactanos</a>
+                        <a href="index-4.html">Administrador</a>
                     </li>
                 </ul>
                 </nav>
@@ -72,7 +73,9 @@
     =========================================================-->
     <main>
         <section class="well well__offset-3">
-            <div class="container">
+            <div class="container" align="center">
+
+                <!--
                 <h2><em></em>Contactanos</h2>
                 <div class="map">
                   <div id="google-map" class="map_model"></div>
@@ -82,8 +85,11 @@
                     </li>
                   </ul>
                 </div>
+            -->
+            <!--
                 <div class="row box-3">
                     <div class="grid_5">
+
                         <h2>Contactanos</h2>
                         <form id="contact-form" class='contact-form'>
                             <div class="contact-form-loader"></div>
@@ -142,7 +148,9 @@
                                 </div>
                             </div>
                         </form>
-                    </div>    
+                    </div>   
+                -->
+                    <!-- 
                     <div class="preffix_1 grid_6">
                         <h2>Informacion de contacto</h2>
                         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed Curabitur vel lorem sit amet nulla ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet sit amet est vel</h3>
@@ -156,8 +164,19 @@
                             </dl>                        
                         </address>
                     </div>
+                -->
+                <div id="form-cura">
+                    <form action="acceder.php" method="post"><br />
+                    <label id="l_usuario">Usuario:</label><br />
+                    <input type="text" name="usuario" id="usuario_cura"><br /><br />
+                    <label id="l_contraseña">Contraseña:<label><br />
+                    <input type="password" name="contraseña" id="contraseña_cura"><br />
+                    <input type="submit" name="login" value="Acceder" id="btn-login">
+                </form>
                 </div>
-            </div>
+                
+                </div>
+            
         </section>
     </main>
 
@@ -166,14 +185,10 @@
     =========================================================-->
     <footer>
         <div class="container">
-          <ul class="socials">
+          <ul>
                 <li>
-                    <a href="https://www.facebook.com/MariscosLacura/?fref=ts" class="fa fa-facebook" ><img src="recortadas/Facebook_Logo1.jpg"></a></li>
-          
+                    <a href="https://www.facebook.com/MariscosLacura/?fref=ts" class="fa fa-facebook" ><img src="recortadas/fb-logo.png" width="100" height="100"></a></li>
             </ul>
-            <div class="copyright">© <span id="copyright-year"></span> |
-                <a href="#">Privacy Policy</a>
-            </div>
         </div>
    
     </footer>
