@@ -50,6 +50,7 @@
 	border: 2px solid black;
 	border-radius: 4px;
 	display: inline;
+	height: 55px;
 }
 
 #btn-agregar{
@@ -59,12 +60,14 @@
 
 #btn-modificar{
 	margin: 0px 50px;
+	margin-left: 50px;
 	background-color: #8A4B08;
 }
 
 #btn-eliminar{
 	margin-left: 50px;
-	background-color: red;
+	margin-right: 50px;
+	background-color: #DC0A0A;
 }
 
 #btn-agr{
@@ -94,4 +97,90 @@
 
 #p-mod{
 	width: 230px;
+	font-size: 14px;
+}
+
+/*FORMULARIO AGREGAR*/
+
+#nombre-platillo{
+	font-size: 14px;
+}
+
+#categoria{
+	font-size: 14px;
+}
+
+#btn-reg{
+	width: 110px;
+	height: 50px;
+	margin-bottom: 30px;
+	background-color: #0101DF;
+	color: #fff;
+	font-family: 'Imprint MT Shadow';
+	font-size: 22px;
+	border-radius: 5px;
+	border: 2px solid #000;
+}
+
+#btn-eli{
+	width: 110px;
+	height: 50px;
+	margin-bottom: 30px;
+	background-color: red;
+	color: #fff;
+	font-family: 'Imprint MT Shadow';
+	font-size: 22px;
+	border-radius: 5px;
+	border: 2px solid #000;
+}
+
+#p-eli{
+	width: 220px;
+}
+
+#n-user{
+	margin-left: 100px;
+	height: 20px;
+	font-style: Arial;
+	font-size: 16px;
+}
+
+#pwd{
+	margin-left: 192px;
+	height: 20px;
+	font-style: Arial;
+	font-size: 16px;
+}
+
+#pwd2{
+	margin-left: 81px;
+	height: 20px;
+	font-style: Arial;
+	font-size: 16px;
+}
+
+#f1, #f2, #f3{
+	border: 1px solid #000;
+	width: 30px;
+	height: 20px;
+	background-image: url("../nuevas/chevron-down.png");
+	background-repeat: no-repeat;
+	background-position: 5px; 
+	background-color: #fff;
+}
+
+#f1{
+	margin-left: 12px;
+}
+
+#f2{
+	margin-left: 19px;
+}
+
+#f3{
+	margin-left: 8px;
+}
+
+vlr{
+	color: #000;
 }

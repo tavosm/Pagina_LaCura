@@ -639,7 +639,13 @@ header .nav {
 
 .titulo_cura {
   font-family: "FreebooterShadow";
-  color: #ffffff;
+  color: #000;
+}
+
+#slogan_cura{
+  font-family: "FreebooterUpdated";
+  color: #000;
+  font-size: 82px;
 }
 
 .titulo_cura_2{
@@ -886,6 +892,7 @@ main {
   .gallery {
     width: 300px;
   }
+
 }
 .gallery em {
   font-size: 36px;
@@ -996,6 +1003,57 @@ main {
 #img-cura{
   height: 96px;
 }
+
+@media (max-width: 1499px) {
+  #img-cura{
+  height: 88px;
+  }
+}
+
+@media (max-width: 1449px) {
+  #img-cura{
+  height: 86px;
+  }
+}
+
+@media (max-width: 1399px) {
+  #img-cura{
+  height: 85px;
+  }
+}
+
+
+@media (max-width: 1299px) {
+  #img-cura{
+  height: 75px;
+  }
+}
+
+@media (max-width: 1199px) {
+  #img-cura{
+  height: 70px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #img-cura{
+  height: 66px;
+  }
+}
+
+@media (max-width: 1050px) {
+  #img-cura{
+  height: 62px;
+  }
+}
+
+@media (max-width: 979px) {
+  #img-cura{
+  height: 57px;
+  }
+}
+
+
 /*========================================================
                      FOOTER  Styles
 =========================================================*/

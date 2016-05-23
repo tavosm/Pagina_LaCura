@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>La Cura - Contactanos</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" type="text/css" href="css/cura-style.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/form-dinamico.js"></script>
+    
+
+    <!--[if lt IE 9]>
+    <html class="lt-ie9">
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a> 
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+ 
+    <script src='js/device.min.js'></script> 
+</head>
+
+<body>
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
+
+        <div id="stuck_container" class="stuck_container">
+            <div class="container">
+
+                <div class="brand">
+                    <h1 class="brand_name">
+                        <br>
+                        <a href="index.html" class="titulo_cura_2">La Cura</a>
+                    </h1>
+                </div>
+
+                <nav class="nav">
+                    <ul class="sf-menu">
+                    <li class="active">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="index-1.html">Acerca</a>
+                    </li>
+                    <li>
+                        <a href="index-2.html">Quienes somos</a>
+                    </li>
+                    <li>
+                        <a href="index-3-menu.php">Menu</a>
+                    </li>
+                    <li>
+                        <a href="index-4.html">Salir</a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <section class="well well__offset-3">
+            <div id="menu-btn" class="container" align="center">
+               <form>
+                    <div id="div-btn">
+                        <input type="button" name="btn-agregar" id="btn-agregar" value="AGREGAR PLATILLO" onclick="mostrarAgregar();">
+                        <input type="button" name="btn-eliminar" id="btn-eliminar" value="ELIMINAR PLATILLO" onclick="mostrarEliminar();">
+                        <input type="button" name="btn-modificar" id="btn-modificar" value="AGREGAR USUARIO" onclick="mostrarModificar();">
+                        <!--<ul id="lista-btn">
+                            <a href="form-agregar.html"><li id="btn-agregar">AGREGAR</li></a>
+                            <a href="form-modificar.html"><li id="btn-modificar">MODIFICAR</li></a>
+                            <a href="form-eliminar.html"><li id="btn-eliminar">ELIMINAR</li></a>
+                        </ul>-->
+                    </div>
+               </form>
+
+               <!--FORMULARIO PARA AGREGAR UN PLATILLO-->
+
+               <form action="agregar.php" method="post" enctype="multipart/form-data" id="fm-agregar" style="display: none;">
+                    <label>AGREGAR PLATILLO</label><br /><br />
+                    Nombre del platillo:
+                    <input type ="text" name="nombre" id="nombre-platillo" required><br />
+                    Categoria:
+                    <select name="categoria" id="categoria">
+                        <option value="Entrada">Entrada</option>
+                        <option value="Camarones">Camarones</option>
+                        <option value="Filetes de pescado">Filetes de pescado</option>
+                        <option value="Tostadas">Tostadas</option>
+                        <option value="Cockteles">Cockteles</option>
+                        <option value="Caldos y jugos">Caldos y jugos</option>
+                        <option value="Tacos">Tacos</option>
+                        <option value="Bebidas">Bebidas</option>
+                    </select>
+                    <br /><br />
+                    <label for="imagen">Imagen:</label>
+                    <input type="file" name="imagen" id="imagen" required><br /><br />
+                    <input type="submit" name="agregar" value="Agregar" id="btn-agr" onClick="verificarAgregar();">
+               </form>
+
+               <!--FORMULARIO PARA AGREGAR UN USUARIO-->
+
+               <form action="modificar.php" method="post" enctype="multipart/form-data" id="fm-modificar" style="display: none;">
+                    <label>AGREGAR USUARIO</label><br /><br />
+                    Nombre del usuario:
+                    <input type="text" name="n-user" id="n-user" placeholder="Minimo 3 caracteres" required><br /><br />
+                    Contraseña:
+                    <input type="password" name="contrasena" id="pwd" placeholder="Minimo 8 caracteres" required><br /><br />
+                    Confirmar contraseña:
+                    <input type="password" name="contrasena2" id="pwd2" placeholder="Minimo 8 caracteres" required><br /><br />
+                    <input type="submit" name="registrar" value="Registrar" id="btn-reg">
+               </form>
+
+               <!--FORMULARIO PARA ELIMINAR UN PLATILLO-->
+
+               <form action="eliminar.php" method="post" id="fm-eliminar" style="display: none;">
+                    <label>ELIMINAR PLATILLO</label><br /><br />
+                    Proporcione el nombre del platillo que desea eliminar:<br />
+                    <input type="text" name="p-eliminar" id="p-eli" required><br /><br />
+                    <input type="submit" name="eliminar" value="Eliminar" id="btn-eli" onClick="verificarEliminar();">
+               </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer>
+        <div class="container">
+          <ul>
+                <li>
+                    <a href="https://www.facebook.com/MariscosLacura/?fref=ts" class="fa fa-facebook" ><img src="recortadas/fb-logo.png" width="100" height="100"></a></li>
+            </ul>
+        </div>
+   
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

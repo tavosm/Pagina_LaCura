@@ -7,9 +7,12 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/cura-style.css">
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/form-dinamico.js"></script>
+
 
     <!--[if lt IE 9]>
     <html class="lt-ie9">
@@ -55,7 +58,7 @@
                         <a href="index-2.html">Quienes somos</a>
                     </li>
                     <li>
-                        <a href="index-3.html">Menu</a>
+                        <a href="index-3-menu.php">Menu</a>
                     </li>
                     <li>
                         <a href="index-4.html">Administrador</a>
@@ -78,16 +81,17 @@
                         <div class="img"><div class="lazy-img" style="padding-bottom: 64.91228070175439%;"><img data-src="images/cura.jpg" alt=""></div></div>
                     </div>
                     <div class="grid_6">
-                        <h3 class="indents-3">Mision.</h3>
-                        <p class="indents-3">Crear alimentosde claidade innovacion, basandose en ingredientes de primera, tecnicas y procesos con estricta higiene, de igual forma procurar rapidez en la atencion a las solicitudes de nuetsros clientes; todo esto acompañado de un entorno de calidad superior, creado por la atmosfera de nuestras  instalaciones, con un servicio que permite ser un lugar preferencial en gustos de nuestros clientes .</p>
-                        <h3 class="indents-3">Vision</h3>
-                        <p class="indents-3"> Queremos ser un restaurante de mariscos con un servicio y atencion de categoria nacional; lider en la innovacion, fusion y presentacion de platillos y bebidas, lograndolo a travez de un trabajo en equipo, con una planificacion y organizacion adecuada, que responda a cualquier reto del consumidor y de la competencia.</p>
-                        <h3 class="indents-3">Valores</h3>
-                        <p class="indents-3">Exelencia: Procuramos hacer las cosas bien, evitamos redundar en procesos y procedimientos, cuidamos los mas pequeños detalles, queremos lograr un producto de calidad</p>
-                        <p class="indents-3">Productividad: Desarrollar en cada uno de nuestros colaboradores, su capacidad creativa a favor del cliente</p>
-                        <p class="indents-3">Honestidad: Ser transparentes con nuetsros clientes y colaboradores, otorgar lo que se ofrece; no prometer si no se puede cumplir lo acordado; un valor que compremete a ser concientes que lo que ofrecido es ompromiso y debe cumplirse sin buscar soluciones a medias, ni pretextos para ocultat errores.</p>
-                        <p class="indents-3">Pasion: Crear nuestros productos con la busqueda de la satisfaccion propia y de nuestros clientes. Hacer las cosas con la idea y el sentimiento de lograr el bien cumplido</p>
-                        <p class="indents-3">Empatia: Pensar y adecuar nuestros actos  buscando la satisfaccion del cliente como propia. Ponernos en los zapatos de nuestros comensales y a hacer las cosas como deseamos sean hechar para nosotros</p>
+                        <h3 class="indents-3">Mision. <button id="f1" onclick="mostrarMision();"></button></h3>
+                        <p class="indents-3" style="display:none;" id="txt-mision">Crear alimentos de claidade innovacion, basandose en ingredientes de primera, tecnicas y procesos con estricta higiene, de igual forma procurar rapidez en la atencion a las solicitudes de nuetsros clientes; todo esto acompañado de un entorno de calidad superior, creado por la atmosfera de nuestras  instalaciones, con un servicio que permite ser un lugar preferencial en gustos de nuestros clientes .</p>
+                        <h3 class="indents-3">Vision. <button id="f2" onclick="mostrarVision();"></button></h3>
+                        <p class="indents-3" style="display:none;" id="txt-vision"> Queremos ser un restaurante de mariscos con un servicio y atencion de categoria nacional; lider en la innovacion, fusion y presentacion de platillos y bebidas, lograndolo a travez de un trabajo en equipo, con una planificacion y organizacion adecuada, que responda a cualquier reto del consumidor y de la competencia.</p>
+                        <h3 class="indents-3">Valores. <button id="f3" onclick="mostrarValores();"></button></h3>
+                        <label style="display:none;" id="txt-valores"><p class="indents-3"><vlr>Excelencia:</vlr> Procuramos hacer las cosas bien, evitamos redundar en procesos y procedimientos, cuidamos los mas pequeños detalles, queremos lograr un producto de calidad</p>
+                        <p class="indents-3"><vlr>Productividad:</vlr> Desarrollar en cada uno de nuestros colaboradores, su capacidad creativa a favor del cliente</p>
+                        <p class="indents-3"><vlr>Honestidad:</vlr> Ser transparentes con nuetsros clientes y colaboradores, otorgar lo que se ofrece; no prometer si no se puede cumplir lo acordado; un valor que compremete a ser concientes que lo que ofrecido es ompromiso y debe cumplirse sin buscar soluciones a medias, ni pretextos para ocultat errores.</p>
+                        <p class="indents-3"><vlr>Pasion:</vlr> Crear nuestros productos con la busqueda de la satisfaccion propia y de nuestros clientes. Hacer las cosas con la idea y el sentimiento de lograr el bien cumplido</p>
+                        <p class="indents-3"><vlr>Empatia:</vlr> Pensar y adecuar nuestros actos  buscando la satisfaccion del cliente como propia. Ponernos en los zapatos de nuestros comensales y a hacer las cosas como deseamos sean hechar para nosotros</p>
+                        </label>
 
 
                     </div>
